@@ -64,7 +64,7 @@ To run a different ROM:
 
 Several test ROMs and games are referenced in the code (commented out), including the IBM logo, corax+, flags, keypad, quirks, Pong, Space Invaders, and Breakout. Uncomment the ROM you want to run and comment out the others.
 
-[Controls mapping](docs/controls.png)
+![Controls mapping](docs/controls.png)
 
 ## Project Structure
 
@@ -79,7 +79,19 @@ Several test ROMs and games are referenced in the code (commented out), includin
 
 ## How It Works
 
-[Component Details](docs/architecture.png)
+![Component Details](docs/architecture.png)
+
+### Showing the project working
+
+![Component Details](docs/ibmlogo.png)
+*Proof of working emulation with IBM logo rendering*
+
+
+## Credits
+ 
+- **[pygame](https://www.pygame.org/)** — used for rendering the display and handling keyboard input.
+- **[Timendus's CHIP-8 Test Suite](https://github.com/Timendus/chip8-test-suite)** — the `2-ibm-logo.ch8`, `3-corax+.ch8`, `4-flags.ch8`, `5-quirks.ch8` and `6-keypad.ch8` ROMs used to verify opcode correctness (GPL-3.0 licensed). The Corax+ test is itself based on an earlier ROM by [corax89](https://github.com/corax89/chip8-test-rom).
+
 
 ## Contributing
 
