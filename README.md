@@ -83,10 +83,17 @@ Several test ROMs and games are referenced in the code (commented out), includin
 
 ### Showing the project working
 
-![Component Details](docs/ibmlogo.png)
+![IBM LOGO](docs/ibmlogo.png)
 *Proof of working emulation with IBM logo rendering*
 
+![Keypad test demo](docs/EX9E.gif)
+*Proof of working EX9E opcode using 6-keypad.ch8*
 
+![Keypad test demo](docs/EXA1.gif)
+*Proof of working EXA1 opcode using 6-keypad.ch8*
+
+![Keypad test demo](docs/FXDA.gif)
+*Proof of working FXDA opcode using 6-keypad.ch8*
 ## Credits
  
 - **[pygame](https://www.pygame.org/)** — used for rendering the display and handling keyboard input.
