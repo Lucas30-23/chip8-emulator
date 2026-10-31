@@ -74,6 +74,7 @@ Several test ROMs and games are referenced in the code (commented out), includin
 ├── roms/            # .ch8 ROM files
 ├── docs/            # screenshots and diagrams (e.g. controls.png)
 ├── README.md
+├── TESTING.md
 └── LICENSE
 ```
 
@@ -87,23 +88,9 @@ Several test ROMs and games are referenced in the code (commented out), includin
 
 *Proof of working emulation with IBM logo rendering*
 
-
-![Keypad test demo](docs/EX9E.gif)
-
-*Proof of working EX9E opcode using 6-keypad.ch8*
-
-
-![Keypad test demo](docs/EXA1.gif)
-
-*Proof of working EXA1 opcode using 6-keypad.ch8*
-
-
-![Keypad test demo](docs/FXDA.gif)
-
-*Proof of working FXDA opcode using 6-keypad.ch8*
+This emulator has also been verified against [Timendus's CHIP-8 Test Suite](https://github.com/Timendus/chip8-test-suite), including opcode-level proof for the keypad instructions. See [TESTING.md](TESTING.md) for the full write-up and GIFs.
 
 ## Credits
- 
 - **[pygame](https://www.pygame.org/)** — used for rendering the display and handling keyboard input.
 - **[Timendus's CHIP-8 Test Suite](https://github.com/Timendus/chip8-test-suite)** — the `2-ibm-logo.ch8`, `3-corax+.ch8`, `4-flags.ch8`, `5-quirks.ch8` and `6-keypad.ch8` ROMs used to verify opcode correctness (GPL-3.0 licensed). The Corax+ test is itself based on an earlier ROM by [corax89](https://github.com/corax89/chip8-test-rom).
 
