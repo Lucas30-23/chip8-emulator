@@ -71,6 +71,7 @@ Several test ROMs and games are referenced in the code (commented out), includin
 ```text
 .
 ├── Chip-8 Emulator.py
+├── Test opcodes.py  # standalone console-based opcode test harness (no pygame)
 ├── roms/            # .ch8 ROM files
 ├── docs/            # screenshots and diagrams (e.g. controls.png)
 ├── README.md
