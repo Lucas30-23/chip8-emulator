@@ -42,7 +42,7 @@ for i in range(len(font)):
 def load_ROM(filelocation):
     with open(filelocation, "rb") as f:
         data = f.read()
-    
+        
     for j in range(len(data)):
         memory[0x200 + j] = data[j]
 def fetch():
@@ -162,6 +162,8 @@ def execute(opcode):
             drawn = True
         elif drawn:
             pc -= 2
+            
+        
     elif first == 0xE:
         if nn == 0x9E:
             if keys[V[x]&0xF]:
@@ -228,15 +230,15 @@ def draw_screen():
             if display[row * 64 + column] == 1:
                 pygame.draw.rect(screen, (255, 255, 255), (column * 10, row * 10, 10, 10))
 
-##load_ROM("2-ibm-logo.ch8")
-##load_ROM("3-corax+.ch8")
-##load_ROM("4-flags.ch8")
-##load_ROM("6-keypad.ch8")
-##load_ROM("5-quirks.ch8")                
-##load_ROM("ultimatetictactoe.ch8")
-##load_ROM("Pong.ch8")
+#load_ROM("roms/2-ibm-logo.ch8")
+#load_ROM("roms/3-corax+.ch8")
+#load_ROM("roms/4-flags.ch8")
+#load_ROM("roms/6-keypad.ch8")
+#load_ROM("roms/5-quirks.ch8")                
+
+load_ROM("roms/Pong.ch8")
 ##load_ROM("Space Invaders [David Winter].ch8")
-load_ROM("br8kout.ch8")
+#load_ROM("br8kout.ch8")
 #load_ROM("spockpaperscissors.ch8")
 running = True
 while running:

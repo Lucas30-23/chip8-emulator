@@ -4,7 +4,7 @@ A CHIP-8 emulator written in Python that uses Pygame to render the display. CHIP
 
 ## Overview
 
-This repository contains a CHIP-8 interpreter written from scratch. It implements the fetch/decode/execute cycle, standard opcodes, a 64 by 32 display, a 16-key hexadecimal keypad, and delay and sound timers. It is designed to help anyone run classic CHIP-8 games such as Pong or study how a simple emulator works.
+This repository contains a CHIP-8 interpreter written from scratch. It implements the fetch/decode/execute cycle, standard opcodes, a 64 by 32 display, a 16 key hexadecimal keypad, and delay and sound timers. It is designed to help anyone run classic CHIP-8 games such as Pong or study how a simple emulator works.
 
 ## Features
 
@@ -89,6 +89,10 @@ Several test ROMs and games are referenced in the code (commented out), includin
 
 *Proof of working emulation with IBM logo rendering*
 
+![Pong](docs/Pong.png)
+
+*Working Pong emulation*
+
 This emulator has also been verified against [Timendus's CHIP-8 Test Suite](https://github.com/Timendus/chip8-test-suite), including opcode-level proof for the keypad instructions. See [TESTING.md](TESTING.md) for the full write-up and GIFs.
 
 ## Credits
@@ -120,6 +124,6 @@ For questions or support, contact:
 
 ## Roadmap
 
-- [ ] Command-line ROM loading instead of editing the script
+- [ ] Command line ROM loading instead of editing the script
 - [ ] Sound output (the sound timer is tracked but not played)
 - [ ] Adjustable clock speed / instructions-per-frame setting

@@ -4,7 +4,7 @@ This emulator has been verified against [Timendus's CHIP-8 Test Suite](https://g
 
 ## Console opcode tests
 
-`Test opcodes.py` is a standalone, Pygame-free test script included in this repo. It re-implements the core opcode logic in isolation and checks each one against its expected result, printing a `PASS`/`FAIL` line per test straight to the terminal. Run it with:
+`Test opcodes.py` is a standalone, Pygame free test script included in this repo. It reimplements the core opcode logic in isolation and checks each one against its expected result, printing a `PASS`/`FAIL` line per test straight to the terminal. Run it with:
 
 ```sh
 python3 "Test opcodes.py"
@@ -28,7 +28,7 @@ The keypad test ROM exercises the three opcodes responsible for reading key inpu
 
 ## IBM logo (display and drawing opcodes)
 
-The IBM logo ROM is a simple, widely-used first test for display and drawing correctness (`00E0`, `6XNN`, `ANNN`, `DXYN`).
+The IBM logo ROM is a simple, widely used first test for display and drawing correctness (`00E0`, `6XNN`, `ANNN`, `DXYN`).
 
 ![IBM logo rendering](docs/ibmlogo.png)
 
