@@ -1,5 +1,7 @@
 # CHIP-8 Emulator
-
+![License](https://img.shields.io/badge/license-MIT-green)
+![Python](https://img.shields.io/badge/python-3.8%2B-blue)
+![Pygame](https://img.shields.io/badge/pygame-2.x-yellow)
 A CHIP-8 emulator written in Python that uses Pygame to render the display. CHIP-8 is an interpreted programming language used on 8-bit microcomputers such as the COSMAC VIP in the mid-1970s to make game programming easier. This project emulates CHIP-8 so it can run classic ROMs such as Pong, Breakout, Space Invaders, and the IBM logo demo.
 
 ## Overview
